@@ -122,5 +122,68 @@
         });
 
     });
+    $(document).ready(function() {
+        $('#testimonialsSlider').slick({
+            slidesToShow: 4, // Display four testimonials on larger screens
+            slidesToScroll: 1,
+            dots: true,
+            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [{
+                    breakpoint: 1024, // Breakpoint for larger screens (tablet)
+                    settings: {
+                        slidesToShow: 2, // Display three testimonials on tablet screens
+                    }
+                },
+                {
+                    breakpoint: 768, // Breakpoint for iPads (portrait) and smaller tablets
+                    settings: {
+                        slidesToShow: 2, // Display two testimonials on smaller tablets
+                    }
+                },
+                {
+                    breakpoint: 576, // Breakpoint for mobile devices
+                    settings: {
+                        slidesToShow: 1, // Display one testimonial on mobile screens
+                    }
+                }
+            ],
+            dots: true, // Enable dots navigation
+            appendDots: $('#testimonialsSlider'),
+        });
+
+        $('.custom-prev').click(function() {
+            $('#testimonialsSlider').slick('slickPrev');
+        });
+
+        $('.custom-next').click(function() {
+            $('#testimonialsSlider').slick('slickNext');
+        });
+    });
+
+    function checkViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function handleScroll() {
+        const elements = document.querySelectorAll('.fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right');
+
+        elements.forEach(element => {
+            if (checkViewport(element)) {
+                element.classList.add("active");
+            }
+        });
+    }
+
+    // Add a scroll event listener
+    window.addEventListener("scroll", handleScroll);
 
 })(jQuery);

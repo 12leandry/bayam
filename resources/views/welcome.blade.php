@@ -26,115 +26,6 @@
     <!-- FAVICON -->
     <link href="images/favicon.ico" rel="shortcut icon">
 
-    <style>
-        .distribute-text {
-            display: flex;
-            justify-content: space-between;
-        }
-        .testimonial-card {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            margin: 10px;
-            /* Add margin to space out cards */
-        }
-
-        .testimonial-image {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        .testimonial-text {
-            margin-top: 15px;
-            font-size: 16px;
-        }
-
-        .testimonial-author {
-            margin-top: 10px;
-            font-style: italic;
-            color: #888;
-        }
-
-        /* sliders start */
-
-        .slider {
-            width: 100%;
-            /* max-width: 800px; */
-            /* Adjust the max-width as needed */
-            margin: 0 auto;
-
-        }
-
-        .slider-navigation {
-            display: flex;
-            flex-direction: column;
-            /* Display dots and buttons in a column */
-            align-items: center;
-            margin-top: -50px;
-            /* Reduce the top margin */
-        }
-
-        .custom-prev,
-        .custom-next {
-            background-color: rgba(102, 172, 46, 1);
-            color: #000;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        .custom-prev:hover,
-        .custom-next:hover {
-            background-color: rgba(102, 172, 46, 1);
-        }
-
-        .custom-prev {
-            float: left;
-        }
-
-        .custom-next {
-            float: right;
-        }
-
-        /* .slick-dots {
-            display: inline-block;
-            text-align: center;
-            margin-top: 100px;
-            list-style: none;
-           
-        } */
-
-        /* .slick-dots li {
-            display: inline-block;
-            margin: 0 5px;
-            list-style: none;
-            margin-top: 45px;
-        } */
-
-        .slick-dots ol button {
-            font-size: 10px;
-            border: none;
-            padding: 5px;
-            background-color: rgba(102, 172, 46, 1);
-            border-radius: 50%;
-            /* cursor: pointer; */
-        }
-
-        .slick-dots ol.slick-active button {
-            background-color: rgba(102, 172, 46, 1);
-            color: #fff;
-        }
-
-        /* slider end */
-    </style>
-
 </head>
 
 <body class="body-wrapper">
@@ -188,11 +79,12 @@
     <section class="banner bg-1" id="home">
         <div class="container ">
             <div class="row">
-                <div class="col-md-12 col-sm-6 col-lg-8 align-self-center" style="margin-top: -55px">
+                <div class="col-md-12 col-sm-6 col-lg-8 align-self-center" style="margin-top: -25px">
                     <!-- Contents -->
                     <div class="content-block col-md-12 ">
-                        <h3 class="text-white distribute-text" style="margin-top: -55px">{{ __('msg.h1') }}</h3><br><br>
-                        <h5 style="margin-top: -55px">{{ __('msg.h11') }} <br> <br> {{__('msg.h12')}}</h5>
+                        <h3 class="text-white distribute-text" style="margin-top: -55px">{{ __('msg.h1') }}</h3>
+                        <br><br>
+                        <h5 style="margin-top: -55px">{{ __('msg.h11') }} <br> <br> {{ __('msg.h12') }}</h5>
                         <!-- App Badge -->
                         <div class="app-badge ">
                             <ul class="list-inline">
@@ -202,8 +94,8 @@
                                         <div>{{ __('msg.dispo') }}<span>{{ __('msg.dispo1') }}</span></div>
                                     </a>
                                 </li>
-                                <li class="list-inline-item ">
-                                    <a href="#" class="btn btn-download"><img src="images/aps.png"
+                                <li class="list-inline-item  ">
+                                    <a href="#" class="btn btn-download "><img src="images/aps.png"
                                             style="width: 50px; height: 50px">
                                         <div>{{ __('msg.dispos') }}<span>{{ __('msg.dispos1') }}</span></div>
                                     </a>
@@ -212,9 +104,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-sm-none d-lg-block col-md-4" style="margin-top: -55px">
-					<!-- App Image -->
-					<div class="image-block">
+                <div class="d-sm-none d-lg-block col-md-4" style="margin-top: -35px">
+                    <!-- App Image -->
+                    <div class="image-block ">
                         <img class="img-fluid phone-thumb" src="images/phones/buy2.png" alt="iphone-banner">
                     </div>
                 </div>
@@ -234,14 +126,14 @@
                 <div class="col-lg-8 align-self-center text-center">
                     <!-- Image Content -->
                     <div class="image-block">
-                        <img class="phone-thumb-md col-sm-6 col-md-12 col-lg-12 " src="images/bayam/bays.png"
+                        <img class="phone-thumb-md col-sm-6 col-md-12 col-lg-12  " src="images/bayam/bays.png"
                             alt="iphone-feature" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-10 m-md-auto align-self-center ml-auto">
                     <div class="about-block">
                         <!-- About 01 -->
-                        <div class="about-item">
+                        <div class="about-item fade-in-right">
                             <div class="icon">
                                 <i class="ti-palette"></i>
                             </div>
@@ -251,7 +143,7 @@
                             </div>
                         </div>
                         <!-- About 02 -->
-                        <div class="about-item active">
+                        <div class="about-item  fade-in-right">
                             <div class="icon">
                                 <i class="ti-panel"></i>
                             </div>
@@ -261,7 +153,7 @@
                             </div>
                         </div>
                         <!-- About 03 -->
-                        <div class="about-item">
+                        <div class="about-item fade-in-right">
                             <div class="icon">
                                 <i class="ti-vector"></i>
                             </div>
@@ -282,20 +174,20 @@
 =            Features            =
 ===============================-->
 
-    <section class="section feature " id="feature"> 
+    <section class="section feature " id="feature">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
                         <h2>{{ __('msg.appfe') }}</h2>
-                        <p >{{ __('msg.appfep') }}</p>
+                        <p class="fade-in-right">{{ __('msg.appfep') }}</p>
                     </div>
                 </div>
             </div>
             <div class="row bg-elipse">
                 <div class="col-lg-4 align-self-center text-center text-lg-right">
                     <!-- Feature Item -->
-                    <div class="feature-item">
+                    <div class="feature-item fade-in-right">
                         <!-- Icon -->
                         <div class="icon">
                             <i class="ti-user"></i>
@@ -307,7 +199,7 @@
                         </div>
                     </div>
                     <!-- Feature Item -->
-                    <div class="feature-item">
+                    <div class="feature-item fade-in-right">
                         <!-- Icon -->
                         <div class="icon">
                             <i class="ti-rss"></i>
@@ -319,9 +211,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center ">
                     <!-- Feature Item -->
-                    <div class="feature-item mb-0">
+                    <div class="feature-item mb-0 fade-in-right">
                         <!-- Icon -->
                         <div class="icon">
                             <i class="ti-bell"></i>
@@ -332,11 +224,11 @@
                             <p style="font-size: 12px;"> {{ __('msg.notifp') }} </p>
                         </div>
                     </div>
-                    <div class="app-screen">
+                    <div class="app-screen fade-in-right">
                         <img class="img-fluid" src="images/phones/picker.png" alt="app-screen">
                     </div>
                     <!-- Feature Item -->
-                    <div class="feature-item">
+                    <div class="feature-item fade-in-right">
                         <!-- Icon -->
                         <div class="icon">
                             <i class="ti-headphone-alt"></i>
@@ -350,7 +242,7 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-left align-self-center">
                     <!-- Feature Item -->
-                    <div class="feature-item">
+                    <div class="feature-item fade-in-right">
                         <!-- Icon -->
                         <div class="icon">
                             <i class="ti-announcement"></i>
@@ -362,7 +254,7 @@
                         </div>
                     </div>
                     <!-- Feature Item -->
-                    <div class="feature-item">
+                    <div class="feature-item fade-in-right">
                         <!-- Icon -->
                         <div class="icon">
                             <img src="images/downloadss.png" class=" color-sucess"
@@ -419,12 +311,12 @@
                 <div class="col-12">
                     <div class="section-title mb-4">
                         <h2 class="mb-3 ">{{ __('msg.plan') }}</h2>
-                        <p>{{ __('msg.planp') }}</p>
+                        <p class="fade-in-right">{{ __('msg.planp') }}</p>
                     </div>
                 </div>
             </div>
             <div class="row  ">
-                <div class="col-lg-4 col-md-8 col-sm-2 mx-auto">
+                <div class="col-lg-4 col-md-8 col-sm-2 mx-auto fade-in-right">
                     <!-- Pricing Table -->
                     <div class="pricing-table text-center">
                         <!-- Title -->
@@ -448,7 +340,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8 col-sm-2 mx-auto">
+                <div class="col-lg-4 col-md-8 col-sm-2 mx-auto fade-in-right">
                     <!-- Pricing Table -->
                     <div class="pricing-table featured text-center">
                         <!-- Title -->
@@ -472,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8 col-sm-2 mx-auto">
+                <div class="col-lg-4 col-md-8 col-sm-2 mx-auto fade-in-right">
                     <!-- Pricing Table -->
                     <div class="pricing-table text-center">
                         <!-- Title -->
@@ -508,7 +400,7 @@
     <section class="cta-download bg-3 overlay ">
         <div class="container ">
             <div class="row">
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center fade-in-right">
                     <div class="image-block"><img class="phone-thumb img-fluid" src="images/phones/mbuy.png"
                             alt="">
                     </div>
@@ -516,24 +408,22 @@
                 <div class="col-lg-6 col-md-12 col-sm-4 ">
                     <div class="content-block text-center">
                         <!-- Title -->
-                        <h2 >{{ __('msg.download') }}</h2>
+                        <h2>{{ __('msg.download') }}</h2>
                         <!-- Desctcription -->
-                        <p>{{ __('msg.downloadp') }}</p>
+                        <p class="fade-in-right">{{ __('msg.downloadp') }}</p>
                         <!-- App Badge -->
                         <div class="app-badge ">
                             <ul class="list-inline">
-                                <li class="list-inline-item">
+                                <li class="list-inline-item fade-in-right">
                                     <a href="#" class="btn btn-download"><img src="images/google-play.png"
                                             style="width: 50px; height: 50px">
                                         <div>{{ __('msg.dispo') }}<span>{{ __('msg.dispo1') }}</span></div>
-                                        <!-- <div>Get it on the<span>GOOGLE PLAY</span></div> -->
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn btn-download"><img src="images/aps.png"
-                                            style="width: 50px; height: 50px">
+                                <li class="list-inline-item fade-in-right">
+                                    <a href="#" class="btn btn-download">
+                                        <img src="images/aps.png" style="width: 50px; height: 50px">
                                         <div>{{ __('msg.dispos') }}<span>{{ __('msg.dispos1') }}</span></div>
-                                        <!-- <div>Available on the<span>Apple store</span></div> -->
                                     </a>
                                 </li>
                             </ul>
@@ -604,7 +494,7 @@
                 <div class="section-title">
                     <br><br>
                     <h2 class="mb-3">{{ __('msg.team') }}</h2>
-                    <p>{{ __('msg.teamp') }}</p>
+                    <p class="fade-in-right">{{ __('msg.teamp') }}</p>
                 </div>
             </div>
             <div id="testimonialsSlider" class="my-3 col-md-12">
@@ -619,13 +509,16 @@
                     <div>
                         <ul class="social-icons list-inline">
                             <li class="list-inline-item">
-                                <a href="https://web.facebook.com/SergesKodjeuOfficiel/" target="_blank"><i class="ti-facebook" style="color: #3b5998"></i></a>
+                                <a href="https://web.facebook.com/SergesKodjeuOfficiel/" target="_blank"><i
+                                        class="ti-facebook" style="color: #3b5998"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://twitter.com/serges_kodjeu" target="_blank"><i class="ti-twitter-alt" style="color: #1DA1F2"></i></a>
+                                <a href="https://twitter.com/serges_kodjeu" target="_blank"><i class="ti-twitter-alt"
+                                        style="color: #1DA1F2"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/serges-kodjeu-fodong-07b9ab221" target="_blank"><i class="ti-linkedin" style="color: #0e76a8"></i></a>
+                                <a href="https://www.linkedin.com/in/serges-kodjeu-fodong-07b9ab221"
+                                    target="_blank"><i class="ti-linkedin" style="color: #0e76a8"></i></a>
                             </li>
                             {{-- <li class="list-inline-item">
                                     <a href=""><i class="ti-youtube" style="color: #c4302b" ></i></a>
@@ -644,13 +537,16 @@
                     <div>
                         <ul class="social-icons list-inline">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/djomgouedouglas/" target="_blank"><i class="ti-facebook" style="color: #3b5998"></i></a>
+                                <a href="https://www.facebook.com/djomgouedouglas/" target="_blank"><i
+                                        class="ti-facebook" style="color: #3b5998"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://twitter.com/YapiDouglas" target="_blank"><i class="ti-twitter-alt" style="color: #1DA1F2"></i></a>
+                                <a href="https://twitter.com/YapiDouglas" target="_blank"><i class="ti-twitter-alt"
+                                        style="color: #1DA1F2"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/yapidouglasofficiel/" target="_blank"><i class="ti-linkedin" style="color: #0e76a8"></i></a>
+                                <a href="https://www.linkedin.com/in/yapidouglasofficiel/" target="_blank"><i
+                                        class="ti-linkedin" style="color: #0e76a8"></i></a>
                             </li>
                             {{-- <li class="list-inline-item">
                                     <a href=""><i class="ti-youtube" style="color: #c4302b" ></i></a>
@@ -669,13 +565,16 @@
                     <div>
                         <ul class="social-icons list-inline">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/profile.php?id=61550695588850" target="_blank"><i class="ti-facebook" style="color: #3b5998"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61550695588850" target="_blank"><i
+                                        class="ti-facebook" style="color: #3b5998"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" target="_blank"><i class="ti-twitter-alt" style="color: #1DA1F2"></i></a>
+                                <a href="#" target="_blank"><i class="ti-twitter-alt"
+                                        style="color: #1DA1F2"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/michel-safomi-56933628a" target="_blank"><i class="ti-linkedin" style="color: #0e76a8"></i></a>
+                                <a href="https://www.linkedin.com/in/michel-safomi-56933628a" target="_blank"><i
+                                        class="ti-linkedin" style="color: #0e76a8"></i></a>
                             </li>
                             {{-- <li class="list-inline-item">
                                     <a href=""><i class="ti-youtube" style="color: #c4302b" ></i></a>
@@ -694,17 +593,16 @@
                     <div>
                         <ul class="social-icons list-inline">
                             <li class="list-inline-item">
-                                <a href="https://web.facebook.com/nickleandry.takafo" target="_blank"><i class="ti-facebook"
-                                        style="color: #3b5998"></i></a>
+                                <a href="https://web.facebook.com/nickleandry.takafo" target="_blank"><i
+                                        class="ti-facebook" style="color: #3b5998"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://twitter.com/NTakafo" target="_blank"><i class="ti-twitter-alt"
                                         style="color: #1DA1F2"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a
-                                    href="https://www.linkedin.com/in/takafo-metambia-nick-leandry-828b30219/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BrTejVobZS4OL0udn7LhCdQ%3D%3D" target="_blank"><i
-                                        class="ti-linkedin" style="color: #0e76a8"></i></a>
+                                <a href="https://www.linkedin.com/in/takafo-metambia-nick-leandry-828b30219/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BrTejVobZS4OL0udn7LhCdQ%3D%3D"
+                                    target="_blank"><i class="ti-linkedin" style="color: #0e76a8"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -720,13 +618,16 @@
                     <div>
                         <ul class="social-icons list-inline">
                             <li class="list-inline-item">
-                                <a href="" target="_blank"><i class="ti-facebook" style="color: #3b5998"></i></a>
+                                <a href="" target="_blank"><i class="ti-facebook"
+                                        style="color: #3b5998"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="" target="_blank"><i class="ti-twitter-alt" style="color: #1DA1F2"></i></a>
+                                <a href="" target="_blank"><i class="ti-twitter-alt"
+                                        style="color: #1DA1F2"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="" target="_blank"><i class="ti-linkedin" style="color: #0e76a8"></i></a>
+                                <a href="" target="_blank"><i class="ti-linkedin"
+                                        style="color: #0e76a8"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -751,7 +652,7 @@
                 <div class="col-12">
                     <div class="section-title">
                         <h2 class="text-black">{{ __('msg.customer') }}</h2>
-                        <p class="text-black">{{ __('msg.customerp') }}</p>
+                        <p class="text-black fade-in-right">{{ __('msg.customerp') }}</p>
                     </div>
                 </div>
             </div>
@@ -766,7 +667,7 @@
                 <div class="col-lg-4 col-md-10 m-md-auto align-self-center ml-auto">
                     <div class="about-block">
                         <!-- About 01 -->
-                        <div class="about-item">
+                        <div class="about-item fade-in-right">
                             <div class="icon">
                                 <i class="ti-palette"></i>
                             </div>
@@ -776,7 +677,7 @@
                             </div>
                         </div>
                         <!-- About 02 -->
-                        <div class="about-item active">
+                        <div class="about-item fade-in-right">
                             <div class="icon">
                                 <i class="ti-panel"></i>
                             </div>
@@ -786,7 +687,7 @@
                             </div>
                         </div>
                         <!-- About 03 -->
-                        <div class="about-item">
+                        <div class="about-item fade-in-right">
                             <div class="icon">
                                 <i class="ti-vector"></i>
                             </div>
@@ -809,17 +710,18 @@
     <section class="section cta-subscribe" id="contact">
         <div class="container-fluid">
             <div class="row bg-elipse-red">
-                <div class="col-lg-6">
-                    <div class="image"><img class="phone-thumb col-sm-6 col-sm-4 col-lg-12 col-md-12" src="images/bayam/2.png"
-                            alt="iphone-app"></div>
-                </div><br>
-                <div class="col-lg-6 align-self-center float-md-right">
+                <div class="col-lg-6 ">
+                    <div class="image"><img class="phone-thumb col-sm-6 col-sm-4 col-lg-12 col-md-12"
+                            src="images/bayam/2.png" alt="iphone-app"></div>
+                </div>
+                <br>
+                <div class="col-lg-6 align-self-center float-md-right ">
                     <div class="content text-center">
                         <div class="mb-4">
-                            <h2 class="text-black"> <span class="text-success"> {{ __('msg.chat') }}</span></h2>
+                            <h2 class="text-black fade-in-right"> <span class="text-success"> {{ __('msg.chat') }}</span></h2>
                         </div>
-                        <div class="description">
-                            <h6>{{ __('msg.chatp') }}</h6>
+                        <div class="description fade-in-right">
+                            <h6 class="">{{ __('msg.chatp') }}</h6>
                         </div>
                         <a href="https://cutt.ly/uwjhyrct" class="whatsapp-button">
                             <img src="images/whatsapp.png" alt="WhatsApp Icon">
@@ -846,8 +748,6 @@
                     <div class="copyright">
                         <p>{{ __('msg.right') }} <br>{{ __('msg.right1') }}<a href="https://zonite.org/"
                                 target="_blank">ZONITE SARL</a>
-
-                            <!-- Distributed by : <a href="https://themewagon.com/" target="_blank">Themewagon</a> -->
                         </p>
                     </div>
                 </div>
@@ -894,57 +794,14 @@
 
     <!-- JAVASCRIPTS -->
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA" async defer></script>
     {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
     <script src="plugins/jquery/jquery.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
     <script src="plugins/slick/slick.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#testimonialsSlider').slick({
-                slidesToShow: 4, // Display four testimonials on larger screens
-                slidesToScroll: 1,
-                dots: true,
-                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-next">Next</button>',
-                autoplay: true,
-                autoplaySpeed: 5000,
-                responsive: [{
-                        breakpoint: 1024, // Breakpoint for larger screens (tablet)
-                        settings: {
-                            slidesToShow: 2, // Display three testimonials on tablet screens
-                        }
-                    },
-                    {
-                        breakpoint: 768, // Breakpoint for iPads (portrait) and smaller tablets
-                        settings: {
-                            slidesToShow: 2, // Display two testimonials on smaller tablets
-                        }
-                    },
-                    {
-                        breakpoint: 576, // Breakpoint for mobile devices
-                        settings: {
-                            slidesToShow: 1, // Display one testimonial on mobile screens
-                        }
-                    }
-                ],
-                dots: true, // Enable dots navigation
-                appendDots: $('#testimonialsSlider'),
-            });
-
-            $('.custom-prev').click(function() {
-                $('#testimonialsSlider').slick('slickPrev');
-            });
-
-            $('.custom-next').click(function() {
-                $('#testimonialsSlider').slick('slickNext');
-            });
-        });
-    </script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     {{-- @Nike-leandry --}}
 

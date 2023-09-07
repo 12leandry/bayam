@@ -1005,7 +1005,7 @@ a:hover {
 }
 
 .about .about-block .about-item.active .icon i {
-    color: #fff;
+    color: #e0dec8;
 }
 
 .about .about-block .about-item.active .content h5,
@@ -2459,26 +2459,192 @@ a:hover {
 }
 
 .testimony-wrap {
-  display: block;
-  position: relative;
-  background: white;
-  padding: 0 30px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14); }
-  .testimony-wrap .user-img {
+    display: block;
+    position: relative;
+    background: white;
+    padding: 0 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+}
+.testimony-wrap .user-img {
     width: 80px;
     height: 80px;
     position: relative;
-    border-radius: 50%; }
-  .testimony-wrap .name {
+    border-radius: 50%;
+}
+.testimony-wrap .name {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 0;
-    color: #000; }
-  .testimony-wrap .position {
+    color: #000;
+}
+.testimony-wrap .position {
     font-size: 16px;
-    color: #83b582; }
+    color: #83b582;
+}
 
 /*# sourceMappingURL=maps/style.css.map */
+/* New styling */
+.distribute-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    /* Add margin to space out cards */
+}
+
+.testimonial-image {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonial-text {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-style: italic;
+    color: #888;
+}
+
+/* sliders start */
+
+.slider {
+    width: 100%;
+    /* max-width: 800px; */
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.slider-navigation {
+    display: flex;
+    flex-direction: column;
+    /* Display dots and buttons in a column */
+    align-items: center;
+    margin-top: -50px;
+    /* Reduce the top margin */
+}
+
+.custom-prev,
+.custom-next {
+    background-color: rgba(102, 172, 46, 1);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: rgba(102, 172, 46, 1);
+}
+
+.custom-prev {
+    float: left;
+}
+
+.custom-next {
+    float: right;
+}
+
+/* .slick-dots {
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    list-style: none;
+   
+} */
+
+/* .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    list-style: none;
+    margin-top: 45px;
+} */
+
+.slick-dots ol button {
+    font-size: 10px;
+    border: none;
+    padding: 5px;
+    background-color: rgba(102, 172, 46, 1);
+    border-radius: 50%;
+    /* cursor: pointer; */
+}
+
+.slick-dots ol.slick-active button {
+    background-color: rgba(102, 172, 46, 1);
+    color: #fff;
+}
+
+/* slider end */
+
+/* animation of images */
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    /* Reduced duration */
+}
+
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    /* Reduced duration */
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    /* Reduced duration */
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    /* Reduced duration */
+}
+
+/* Apply animations to elements with the 'active' class */
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-down.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*end of animation  */
+
+/* End New styling */
